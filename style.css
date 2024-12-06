@@ -1,3 +1,229 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* Keeps elements on-screen by combining padding and borders into element width*/
+    text-decoration:none;
+    border:none;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(177, 203, 209);
+}
+
+:root {
+    --bg-color:rgb(14, 43, 37);
+    --secondary-bg-color: rgb(19, 58, 51);
+    --text-color: rgb(177, 203, 209);
+    --main-color: rgb(97, 126, 76);
+}
+
 body {
-    background-color:rgb(82 183 136);
+    background-color:var(--bg-color);
+}
+
+/* css for navigation bar */
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 5%;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navBar {
+    margin-right: 30px;
+}
+
+.navBar a {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.navBar a:hover,
+.navBar a.active{
+    color:rgb(165, 116, 42)
+}
+
+#menuBar {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor:pointer;
+    display:none;
+}
+
+/* css for home page */
+section {
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+}
+
+.home {
+    display:flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.homeText {
+    max-width: 60rem;
+}
+
+.homeText h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.homeText .title-animation {
+    position: relative;
+    width: 32rem;
+}
+
+.homeText .title-animation h3 {
+    font-size:3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+.homeText p{
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+.socials {
+    position:absolute;
+    bottom:4rem;
+    width:125px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.socials a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border:.1rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 24px;
+    color:var(--text-color);
+    text-decoration: none;
+    overflow:hidden;
+}
+
+.socials a:hover {
+    color:var(--bg-color);
+}
+
+.socials a::before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background:var(--main-color);
+    z-index: -1;
+    transition: .5s
+}
+
+.socials a:hover::before {
+    width:100%
+}
+
+.profilepicture img {
+    display: flex;
+    width: 400px;
+    border: .1rem;
+    border-radius: 50%;
+    right: 10px;
+    margin-left: 4rem;
+}
+
+.pictureOverlay {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s
+}
+
+.pictureOverlay:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
+
+.aboutMe {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--secondary-bg-color);
+    padding-bottom: 6rem;
+}
+
+
+.heading {
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+    text-align:center;
+}
+
+span {
+    color:var(--main-color)
+}
+
+.aboutMe-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe-img img {
+    width:90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.aboutMe-img .imageSpin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--secondary-bg-color);
+    border-bottom: .2rem solid var(--secondary-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);    
+}
+
+.aboutMe-content {
+    font-size: 1.2rem;
 }

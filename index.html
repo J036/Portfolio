@@ -15,21 +15,57 @@
     <meta http-equiv="refresh" content ="1800">
         <!-- Makes the page refresh every 30 min-->
     <link rel="stylesheet" href="style.css">
+
+    <!-- boxicons's custom element -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <a href="" class="logo"> Jay Joseph </h1>
+    <!-- coding for navigation bar -->
+    <header class = "header">
+        <a href="" class="logo"> Jay Joseph
+        <div class="bx bx-menu" id="menuBar"></div> 
         <nav class="navBar">
-            <a href=""></a>Home</a>
-            <a href=""></a>Portfolio</a>
-            <a href=""></a>About Me</a>
-            <a href=""></a>Contact</a>
+            <a href="" class = "active"> Home</a>
+            <a href=""> About Me</a>
+            <a href=""> Portfolio</a>
+            <a href=""> Contact</a>
         </nav>
     </header>
-    <main>
-        <h4>Yap</h4>
-        <p>yapyapyap</p>
-    </main>
+
+    <section class="home" id=""home>
+        <div class="homeText">
+            <h1>Hi, I'm <span>Jay Joseph.</span></h1>
+            <div class="title-animation">
+                <h3>Student Journalist</h3>
+            </div>
+            <p>I'm a third-year journalism and environmental sciences student at Northwestern University. I am studying solutions, computational, and investigative journalism.</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/2314682316413549641321" target="_blank"> <i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://x.com/JayJoseph810411" target="_blank"><i class='bx bxl-twitter' ></i></div></a>
+        </div>    
+        
+        <div class="profilepicture">
+            <img src="profilepicture.JPG" alt="Picture of Jay Joseph (me)">
+        </div>
+
+        <div class="pictureOverlay"></div>
+    </section>    
+    
+    <!-- Page sections -->
+     <section class="aboutMe" id="aboutMe">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="aboutMe-img">
+            <img src="profilepicturesquare.JPG" alt="Square picture of Jay Joseph">
+            <span class="imageSpin"></span>
+        </div>
+
+        <div class="aboutMe-content">
+            <p>Hi! My name is Jay Joseph, and I am a third-year journalism and environmental sciences student. I currently work for Indigenous STEAM and am studying solutions, computational, and investigative journalism.</p>
+        </div>
+     </section>
 
 </body>
