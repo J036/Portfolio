@@ -544,3 +544,9 @@ depending on size. Also compresses navigation bar under a certain phone width. *
         margin: 0 auto;
     }
 }
+
+@media (max-width: 250px) {
+    .aboutMe-img {
+        width: 55%;
+    }
+}
