@@ -18,44 +18,48 @@
 
     <!-- boxicons's custom element -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jay Joseph Portfolio</title>
 </head>
 
 <body>
     <!-- coding for navigation bar -->
     <header class = "header">
-        <a href="" class="logo"> Jay Joseph
+        <a href="" class="logo"> Jay Joseph </a>
         <div class="bx bx-menu" id="menuBar"></div> 
         <nav class="navBar">
             <a href="#home" class = "active"> Home</a>
             <a href="#aboutMe"> About Me</a>
             <a href="#portfolio"> Portfolio</a>
             <a href="#contact"> Contact</a>
+
+            <span class="activeNav"></span>
         </nav>
     </header>
-
+    <!-- <!-- coding for home section --> -->
     <section class="home" id="home">
+        <div class="profilepicture">
+            <img src="profilepicture.JPG" alt="Picture of Jay Joseph (me)">
+        </div>
+
         <div class="homeText">
             <h1>Hi, I'm <span>Jay Joseph.</span></h1>
             <div class="title-animation">
                 <h3>Student Journalist</h3>
             </div>
             <p>I'm a third-year journalism and environmental sciences student at Northwestern University. I am studying solutions, computational, and investigative journalism.</p>
-        </div>
 
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/2314682316413549641321" target="_blank"> <i class='bx bxl-linkedin-square' ></i></a>
-            <a href="https://x.com/JayJoseph810411" target="_blank"><i class='bx bxl-twitter' ></i></div></a>
-        </div>    
-        
-        <div class="profilepicture">
-            <img src="profilepicture.JPG" alt="Picture of Jay Joseph (me)">
-        </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/2314682316413549641321" target="_blank"> <i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://x.com/JayJoseph810411" target="_blank"><i class="bx bxl-twitter"></i></a>
+            </div>    
+        </div>        
 
-        <div class="pictureOverlay"></div>
+
     </section>    
     
     <!-- Page sections -->
-     <section class="aboutMe" id="aboutMe">
+    <!-- Coding for About Me page -->
+    <section class="aboutMe" id="aboutMe">
         <h2 class="heading">About <span>Me</span></h2>
 
         <div class="aboutMe-img">
@@ -66,7 +70,59 @@
         <div class="aboutMe-content">
             <p>Hi! My name is Jay Joseph, and I am a third-year journalism and environmental sciences student at Northwestern University. I currently work for Indigenous STEAM and am studying solutions, computational, and investigative journalism.</p>    
         </div>
-     </section>
+    </section>
 
-     <script src="script.js"></script>
+    <!-- Coding for Portfolio page -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolioText">
+            <h2>Portfolio</h2>
+        </div>
+    </section>
+
+
+    <!-- Coding for Contact page -->
+     <!-- Note to self: link to google sheets -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="inputBox">
+                <div class="inputField">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="inputField">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="inputField">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="inputField">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textAreaField">
+                <textarea cols="30" rows="10" placeholder="Your Message" required> </textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn">Submit</button>
+            </div>    
+        </form>
+    </section>
+
+
+     <footer class="footer">
+        <div class="footerArrow">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>

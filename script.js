@@ -1,5 +1,14 @@
-//for navigation bar
+// toggle menu icon
+let menuBar = document.querySelector('#menuBar');
+let navBar = document.querySelector('.navBar');
 
+menuBar.onclick = () => {
+    menuBar.classList.toggle('bx-x');
+    navBar.classList.toggle('active');
+}
+
+
+//for navigation bar
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
