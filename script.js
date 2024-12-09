@@ -1,4 +1,4 @@
-// toggle menu icon
+// toggle menu icon between lines and x
 let menuBar = document.querySelector('#menuBar');
 let navBar = document.querySelector('.navBar');
 
@@ -8,7 +8,7 @@ menuBar.onclick = () => {
 }
 
 
-//for navigation bar
+// Changes highlighted section in navigation Bar
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
